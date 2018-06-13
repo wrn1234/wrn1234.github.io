@@ -192,8 +192,10 @@ window.onscroll=function(){
     if(sr!=null){
         if(document.body.scrollTop>115){
             document.querySelector(".search").style.background="red";
+            document.querySelector(".search").style.top="0";
         }else{
             document.querySelector(".search").style.background="transparent";
+            document.querySelector(".search").style.top="auto";
         }
     }
     
