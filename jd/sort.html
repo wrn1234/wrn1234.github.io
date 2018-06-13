@@ -1,0 +1,291 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>分类--Document</title>
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <link rel="stylesheet" href="bootstrap-3.3.4-dist/css/bootstrap.css">
+    <link rel="stylesheet" href="">
+    <link rel="stylesheet" href="font-btn/font-awesome-4.7.0/css/font-awesome.css">
+    <link rel="stylesheet" href="css/swiper-4.2.6.min.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body class="sort">
+   <!-----底部导航--->
+    <nav>
+        <ul>
+            <li>
+                <a href="index.html"><i class="fa fa-home"></i><span>首页</span></a>
+            </li>
+            <li  class="active">
+                <a href="sort.html"><i class="fa fa-tasks"></i><span>分类</span></a>
+            </li>
+            <li>
+                <a href=""><i class="fa fa-times-circle-o"><i class="hot"></i></i><span>觅Me</span></a>
+            </li>
+            <li>
+                <a href="" class="hott"><i class="fa fa-shopping-cart"></i><span>购物车</span></a>
+            </li>
+            <li>
+                <a href=""><i class="fa fa-user-o"></i><span>我的</span></a>
+            </li>
+        </ul>
+    </nav>
+    
+<div class="main" id="mainsort">
+    <div class="container-fuild">
+        <div class="row">
+            <div class="col-xs-3">
+                <ul class="sortnav">
+                    <li class="active">推荐分类</li>
+                    <li>手机数码</li>
+                    <li>家用电器</li>
+                    <li>电脑办公</li>
+                    <li>计生情趣</li>
+                    <li>美妆护肤</li>
+                    <li>个护清洁</li>
+                    <li>汽车用品</li>
+                    <li>京东超市</li>
+                    <li>男装</li>
+                    <li>男鞋</li>
+                    <li>女装</li>
+                    <li>女鞋</li>
+                    <li>母婴童装</li>
+                </ul>
+            </div>
+            
+            
+            <div class="col-xs-9 sortlist">
+                  <div class="active">
+                      <img src="images/sort/bg.jpg" alt="">
+                      <h3>推荐分类</h3>
+                      <div class="row">
+                          <div class="col-xs-4" v-for="ar in ars">
+                              <a :href="ar.link">
+                                  <img :src="ar.img" alt="">
+                                  <p>{{ar.name}}</p>
+                              </a>
+                          </div>
+                      </div>
+                      <div class="row">
+                         <h3>家电热搜</h3>
+                          <div class="col-xs-4" v-for="ar in ars1">
+                              <a :href="ar.link">
+                                  <img :src="ar.img" alt="">
+                                  <p>{{ar.name}}</p>
+                              </a>
+                          </div>
+                      </div>
+                      <div class="row">
+                         <h3>热卖手机</h3>
+                          <div class="col-xs-4" v-for="ar in ars2">
+                              <a :href="ar.link">
+                                  <img :src="ar.img" alt="">
+                                  <p>{{ar.name}}</p>
+                              </a>
+                          </div>
+                      </div>
+                  </div>
+                  <div>
+                      <div class="row">
+                      <h3>热门品牌</h3>
+                      <div class="col-xs-4" v-for="ar in ars3">
+                          <a :href="ar.link">
+                              <img :src="ar.img" alt="">
+                              <p>{{ar.name}}</p>
+                          </a>
+                      </div>
+                      </div>
+                      <div class="row">
+                         <h3>手机通讯</h3>
+                          <div class="col-xs-4" v-for="ar in ars4">
+                          <a :href="ar.link">
+                              <img :src="ar.img" alt="">
+                              <p>{{ar.name}}</p>
+                          </a>
+                      </div>
+                      </div>
+                  </div>
+                  <div>
+                      <h3>厨房小店</h3>
+                      <div class="row">
+                          <div class="col-xs-4" v-for="ar in ars5">
+                              <a :href="ar.link">
+                                  <img :src="ar.img" alt="">
+                                  <p>{{ar.name}}</p>
+                              </a>
+                          </div>
+                      </div>
+                      <div class="row">
+                         <h3>个护健康</h3>
+                          <div class="col-xs-4" v-for="ar in ars6">
+                              <a :href="ar.link">
+                                  <img :src="ar.img" alt="">
+                                  <p>{{ar.name}}</p>
+                              </a>
+                          </div>
+                      </div>
+                  </div>
+                  <div>
+                      <div class="row">
+                          <h3>热卖分类</h3>
+                          <div class="col-xs-4" v-for="ar in ars7">
+                              <a :href="ar.link">
+                                  <img :src="ar.img" alt="">
+                                  <p>{{ar.name}}</p>
+                              </a>
+                          </div>
+                      </div>
+                      <div class="row">
+                          <h3>电脑整机</h3>
+                          <div class="col-xs-4" v-for="ar in ars7">
+                              <a :href="ar.link">
+                                  <img :src="ar.img" alt="">
+                                  <p>{{ar.name}}</p>
+                              </a>
+                          </div>
+                      </div>
+                  </div>
+                  <div>
+                      <div class="row">
+                         <h3>热卖产品</h3>
+                          <div class="col-xs-4" v-for="ar in ars8">
+                              <a :href="ar.link">
+                                  <img :src="ar.img" alt="">
+                                  <p>{{ar.name}}</p>
+                              </a>
+                          </div>
+                      </div>
+                      <div class="row">
+                         <h3>热卖产品</h3>
+                          <div class="col-xs-4" v-for="ar in ars8">
+                              <a :href="ar.link">
+                                  <img :src="ar.img" alt="">
+                                  <p>{{ar.name}}</p>
+                              </a>
+                          </div>
+                      </div>
+                  </div>
+                  <div>
+                      <div class="row">
+                         <h3>当季主推</h3>
+                          <div class="col-xs-4" v-for="ar in ars9">
+                              <a :href="ar.link">
+                                  <img :src="ar.img" alt="">
+                                  <p>{{ar.name}}</p>
+                              </a>
+                          </div>
+                      </div>
+                      <div class="row">
+                         <h3>拔草推荐</h3>
+                          <div class="col-xs-4" v-for="ar in ars10">
+                              <a :href="ar.link">
+                                  <img :src="ar.img" alt="">
+                                  <p>{{ar.name}}</p>
+                              </a>
+                          </div>
+                      </div>
+                      <div class="row">
+                         <h3>面部护肤</h3>
+                          <div class="col-xs-4" v-for="ar in ars11">
+                              <a :href="ar.link">
+                                  <img :src="ar.img" alt="">
+                                  <p>{{ar.name}}</p>
+                              </a>
+                          </div>
+                      </div>
+                      <div class="row">
+                         <h3>男士护肤</h3>
+                          <div class="col-xs-4" v-for="ar in ars12">
+                              <a :href="ar.link">
+                                  <img :src="ar.img" alt="">
+                                  <p>{{ar.name}}</p>
+                              </a>
+                          </div>
+                      </div>
+                      <div class="row">
+                         <h3>香水</h3>
+                          <div class="col-xs-4" v-for="ar in ars13">
+                              <a :href="ar.link">
+                                  <img :src="ar.img" alt="">
+                                  <p>{{ar.name}}</p>
+                              </a>
+                          </div>
+                      </div>
+                      <div class="row">
+                         <h3>彩妆</h3>
+                          <div class="col-xs-4" v-for="ar in ars14">
+                              <a :href="ar.link">
+                                  <img :src="ar.img" alt="">
+                                  <p>{{ar.name}}</p>
+                              </a>
+                          </div>
+                      </div>
+                      <div class="row">
+                         <h3>美妆工具</h3>
+                          <div class="col-xs-4" v-for="ar in ars15">
+                              <a :href="ar.link">
+                                  <img :src="ar.img" alt="">
+                                  <p>{{ar.name}}</p>
+                              </a>
+                          </div>
+                      </div>
+                      <div class="row">
+                         <h3>大牌推荐</h3>
+                          <div class="col-xs-4" v-for="ar in ars16">
+                              <a :href="ar.link">
+                                  <img :src="ar.img" alt="">
+                                  <p>{{ar.name}}</p>
+                              </a>
+                          </div>
+                      </div>
+                  </div>
+                  <div>
+                      <div class="row">
+                         <h3>畅销推荐</h3>
+                          <div class="col-xs-4" v-for="ar in ars17">
+                              <a :href="ar.link">
+                                  <img :src="ar.img" alt="">
+                                  <p>{{ar.name}}</p>
+                              </a>
+                          </div>
+                      </div>
+                      <div class="row">
+                         <h3>明星品牌</h3>
+                          <div class="col-xs-4" v-for="ar in ars18">
+                              <a :href="ar.link">
+                                  <img :src="ar.img" alt="">
+                                  <p>{{ar.name}}</p>
+                              </a>
+                          </div>
+                      </div>
+                      <div class="row">
+                         <h3>纸品湿巾</h3>
+                          <div class="col-xs-4" v-for="ar in ars19">
+                              <a :href="ar.link">
+                                  <img :src="ar.img" alt="">
+                                  <p>{{ar.name}}</p>
+                              </a>
+                          </div>
+                      </div>
+                  </div>
+            </div>
+            
+            
+        </div>
+    </div>
+</div> 
+   
+<!--    返回顶部-->
+   <div class="footer-top">
+       
+   </div>
+   
+    
+    <script src="js/vue.js"></script>
+    <script src="js/timeCountDown.js"></script>
+    <script src="js/jquery-1.11.1.min.js"></script>
+    <script src="js/swiper-4.2.6.min.js"></script>
+    <script src="js/script.js"></script>
+</body>
+</html>
