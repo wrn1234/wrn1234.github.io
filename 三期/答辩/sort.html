@@ -1,0 +1,780 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <link rel="stylesheet" href="bootstrap-3.3.4-dist/css/bootstrap.css">
+    <link rel="stylesheet" href="font-awesome-4.7.0/css/font-awesome.css">
+    <link rel="stylesheet" href="css/swiper-4.2.6.min.css">
+    <link rel="stylesheet" href="css/sort.css">
+</head>
+<body>
+   
+<!--   搜索栏-->
+    <div class="search">
+        <div class="left">
+            <a href="index.html"><img src="images/new-back.png" alt=""></a>
+        </div>
+        <div class="center">
+            <i class="fa fa-search"></i>
+            <input type="text" placeholder="请输入关键字">
+        </div>
+    </div>
+ <!--   搜索栏-->   
+    
+<!--    底部定位导航-->
+  <nav>
+        <ul>
+            <li class="active">
+                <a href="index.html"><img src="images/nav1.png" alt=""></a>
+            </li>
+            <li>
+                <a href="sort.html"><img src="images/nav2.png" alt=""></a>
+            </li>
+            <li>
+                <a href="offer.html"><img src="images/nav3.png" alt=""></a>
+            </li>
+            <li>
+                <a href="cart.html"><img src="images/nav4.png" alt=""></a>
+            </li>
+            <li>
+                <a href="my.html"><img src="images/nav5.png" alt=""></a>
+            </li>
+        </ul>
+</nav>
+<!--    底部定位导航-->
+    
+<!--    产品侧边栏的样式-->
+    
+    <div class="sort">
+        <div class="container-fuild">
+            <div class="row">
+                <div class="col-xs-3 sortlist">
+                    <ul class="sortnav">
+                        <li class="color">女鞋</li>
+                        <li>男鞋</li>
+                        <li>运动</li>
+                        <li>户外</li>
+                        <li>童装童鞋</li>
+                        <li>全部品牌</li>
+                        <li>专柜同款</li>
+                        <li>他她</li>
+                        <li>天意美</li>
+                        <li>百丽</li>
+                        <li>思加图</li>
+                        <li>森达</li>
+                    </ul>
+                </div>
+                <div class="col-xs-9 sort-list">
+                    <div class="act">
+                          <img src="images/sort1.jpg" alt="">
+                        <div class="sort1">
+                          <h4>热门品牌</h4>
+                          <div class="row">
+                              <div class="col-xs-4" v-for="ar in ars1">
+                                  <a :href="ar.link">
+                                      <img :src="ar.img" alt="">
+                                      <p>{{ar.name}}</p>
+                                  </a>
+                              </div>
+                          </div>
+                        </div>
+                        <div>
+                          <h4>极简实穿</h4>
+                          <div class="row">
+                              <div class="col-xs-4" v-for="ar in ars2">
+                                  <a :href="ar.link">
+                                      <img :src="ar.img" alt="">
+                                      <p>{{ar.name}}</p>
+                                  </a>
+                              </div>
+                          </div>
+                        </div>
+                         <div>
+                          <h4>女士单鞋</h4>
+                          <div class="row">
+                              <div class="col-xs-4" v-for="ar in ars3">
+                                  <a :href="ar.link">
+                                      <img :src="ar.img" alt="">
+                                      <p>{{ar.name}}</p>
+                                  </a>
+                              </div>
+                          </div>
+                        </div>
+                         
+                         <div>
+                          <h4>女士凉鞋</h4>
+                          <div class="row">
+                              <div class="col-xs-4" v-for="ar in ars4">
+                                  <a :href="ar.link">
+                                      <img :src="ar.img" alt="">
+                                      <p>{{ar.name}}</p>
+                                  </a>
+                              </div>
+                          </div>
+                        </div>
+                    </div>
+<!--                    男鞋开始-->
+                    <div>
+                       <div>
+                         <img src="images/son-icon.jpg" alt="">
+                          <h4>热门品牌</h4>
+                          <div class="row">
+                              <div class="col-xs-4" v-for="ar in ars6">
+                                  <a :href="ar.link">
+                                      <img :src="ar.img" alt="">
+                                      <p>{{ar.name}}</p>
+                                  </a>
+                              </div>
+                          </div> 
+                       </div>
+                        
+                        <div>
+                          <h4>男士单鞋</h4>
+                          <div class="row">
+                              <div class="col-xs-4" v-for="ar in ars7">
+                                  <a :href="ar.link">
+                                      <img :src="ar.img" alt="">
+                                      <p>{{ar.name}}</p>
+                                  </a>
+                              </div>
+                          </div> 
+                       </div>
+                        <div>
+                          <h4>男士靴子</h4>
+                          <div class="row">
+                              <div class="col-xs-4" v-for="ar in ars8">
+                                  <a :href="ar.link">
+                                      <img :src="ar.img" alt="">
+                                      <p>{{ar.name}}</p>
+                                  </a>
+                              </div>
+                          </div> 
+                       </div>
+                       <div>
+                          <h4>男士凉鞋</h4>
+                          <div class="row">
+                              <div class="col-xs-4" v-for="ar in ars9">
+                                  <a :href="ar.link">
+                                      <img :src="ar.img" alt="">
+                                      <p>{{ar.name}}</p>
+                                  </a>
+                              </div>
+                          </div> 
+                       </div>
+                    </div>
+<!--            男鞋结束-->
+              
+<!--              运动开始-->
+               <div>
+                   <div>
+                       <img src="images/motion-icon.jpg" alt="">
+                        <h4>热门推荐</h4>
+                        <div class="row">
+                            <div class="col-xs-4" v-for="ar in ars10">
+                                <a :href="ar.link">
+                                    <img :src="ar.img" alt="">
+                                    <p>{{ar.name}}</p>
+                                </a>
+                            </div>
+                        </div> 
+                   </div>
+                   <div>
+                        <h4>运动鞋</h4>
+                        <div class="row">
+                            <div class="col-xs-4" v-for="ar in ars11">
+                                <a :href="ar.link">
+                                    <img :src="ar.img" alt="">
+                                    <p>{{ar.name}}</p>
+                                </a>
+                            </div>
+                        </div> 
+                   </div>
+                   <div>
+                        <h4>休闲鞋</h4>
+                        <div class="row">
+                            <div class="col-xs-4" v-for="ar in ars12">
+                                <a :href="ar.link">
+                                    <img :src="ar.img" alt="">
+                                    <p>{{ar.name}}</p>
+                                </a>
+                            </div>
+                        </div> 
+                   </div>
+                   <div>
+                        <h4>运动服</h4>
+                        <div class="row">
+                            <div class="col-xs-4" v-for="ar in ars13">
+                                <a :href="ar.link">
+                                    <img :src="ar.img" alt="">
+                                    <p>{{ar.name}}</p>
+                                </a>
+                            </div>
+                        </div> 
+                   </div>
+                   <div>
+                        <h4>运动包</h4>
+                        <div class="row">
+                            <div class="col-xs-4" v-for="ar in ars14">
+                                <a :href="ar.link">
+                                    <img :src="ar.img" alt="">
+                                    <p>{{ar.name}}</p>
+                                </a>
+                            </div>
+                        </div> 
+                   </div>
+                   <div>
+                        <h4>运动装备</h4>
+                        <div class="row">
+                            <div class="col-xs-4" v-for="ar in ars15">
+                                <a :href="ar.link">
+                                    <img :src="ar.img" alt="">
+                                    <p>{{ar.name}}</p>
+                                </a>
+                            </div>
+                        </div> 
+                   </div>
+               </div>
+               
+               
+<!--            运动结束-->
+               
+<!--               户外开始-->
+               <div>
+                   <div>
+                        <img src="images/outdoors-icon.jpg" alt="">
+                        <h4>户外服装</h4>
+                        <div class="row">
+                            <div class="col-xs-4" v-for="ar in ars16">
+                                <a :href="ar.link">
+                                    <img :src="ar.img" alt="">
+                                    <p>{{ar.name}}</p>
+                                </a>
+                            </div>
+                        </div> 
+                   </div>
+                   <div>
+                        <h4>户外鞋靴</h4>
+                        <div class="row">
+                            <div class="col-xs-4" v-for="ar in ars17">
+                                <a :href="ar.link">
+                                    <img :src="ar.img" alt="">
+                                    <p>{{ar.name}}</p>
+                                </a>
+                            </div>
+                        </div> 
+                   </div>
+                   <div>
+                        <h4>热门品牌</h4>
+                        <div class="row">
+                            <div class="col-xs-4" v-for="ar in ars18">
+                                <a :href="ar.link">
+                                    <img :src="ar.img" alt="">
+                                    <p>{{ar.name}}</p>
+                                </a>
+                            </div>
+                        </div> 
+                   </div>
+               </div>
+               
+<!--               户外结束-->
+<!--              童装童鞋开始-->
+               <div>
+                   <div>
+                       <img src="images/children-icon.jpg" alt="">
+                       <h4>童鞋</h4>
+                        <div class="row">
+                            <div class="col-xs-4" v-for="ar in ars19">
+                                <a :href="ar.link">
+                                    <img :src="ar.img" alt="">
+                                    <p>{{ar.name}}</p>
+                                </a>
+                            </div>
+                        </div> 
+                   </div>
+                   <div>
+                       <h4>童装</h4>
+                        <div class="row">
+                            <div class="col-xs-4" v-for="ar in ars20">
+                                <a :href="ar.link">
+                                    <img :src="ar.img" alt="">
+                                    <p>{{ar.name}}</p>
+                                </a>
+                            </div>
+                        </div> 
+                   </div>
+                   <div>
+                       <h4>年龄段</h4>
+                        <div class="row">
+                            <div class="col-xs-4" v-for="ar in ars21">
+                                <a :href="ar.link">
+                                    <img :src="ar.img" alt="">
+                                    <p>{{ar.name}}</p>
+                                </a>
+                            </div>
+                        </div> 
+                   </div>
+                   <div>
+                       <h4>热门品牌</h4>
+                        <div class="row">
+                            <div class="col-xs-4" v-for="ar in ars22">
+                                <a :href="ar.link">
+                                    <img :src="ar.img" alt="">
+                                    <p>{{ar.name}}</p>
+                                </a>
+                            </div>
+                        </div> 
+                   </div>
+               </div>
+<!--              童装童鞋结束-->
+<!--              各大品牌开始-->
+               <div>
+                   <div>
+                       <h4>鞋靴品牌大牌</h4>
+                        <div class="row">
+                            <div class="col-xs-4" v-for="ar in ars23">
+                                <a :href="ar.link">
+                                    <img :src="ar.img" alt="">
+                                    <p>{{ar.name}}</p>
+                                </a>
+                            </div>
+                        </div> 
+                   </div>
+                   <div>
+                       <h4>运动品牌大牌</h4>
+                        <div class="row">
+                            <div class="col-xs-4" v-for="ar in ars24">
+                                <a :href="ar.link">
+                                    <img :src="ar.img" alt="">
+                                    <p>{{ar.name}}</p>
+                                </a>
+                            </div>
+                        </div> 
+                   </div>
+                   <div>
+                       <h4>户外品牌大牌</h4>
+                        <div class="row">
+                            <div class="col-xs-4" v-for="ar in ars25">
+                                <a :href="ar.link">
+                                    <img :src="ar.img" alt="">
+                                    <p>{{ar.name}}</p>
+                                </a>
+                            </div>
+                        </div> 
+                   </div>
+                   <div>
+                       <h4>儿童品牌大全</h4>
+                        <div class="row">
+                            <div class="col-xs-4" v-for="ar in ars26">
+                                <a :href="ar.link">
+                                    <img :src="ar.img" alt="">
+                                    <p>{{ar.name}}</p>
+                                </a>
+                            </div>
+                        </div> 
+                   </div>
+                   
+               </div>
+<!--              各大品牌结束-->
+   
+<!--   专柜同款开始-->
+                <div>
+                    <div>
+                      <img src="images/same-icon.jpg" alt="">
+                       <h4>同款品牌</h4>
+                        <div class="row">
+                            <div class="col-xs-4" v-for="ar in ars5">
+                                <a :href="ar.link">
+                                    <img :src="ar.img" alt="">
+                                    <p>{{ar.name}}</p>
+                                </a>
+                            </div>
+                        </div> 
+                   </div>
+                   <div>
+                       <h4>明星品牌</h4>
+                        <div class="row">
+                            <div class="col-xs-4" v-for="ar in ars1">
+                                <a :href="ar.link">
+                                    <img :src="ar.img" alt="">
+                                    <p>{{ar.name}}</p>
+                                </a>
+                            </div>
+                        </div> 
+                   </div>
+                </div>
+<!--   专柜同款结束-->
+   
+<!--   他她开始-->
+               <div>
+                   <div>
+                       <h4>女士凉鞋</h4>
+                        <div class="row">
+                            <div class="col-xs-4" v-for="ar in ars27">
+                                <a :href="ar.link">
+                                    <img :src="ar.img" alt="">
+                                    <p>{{ar.name}}</p>
+                                </a>
+                            </div>
+                        </div> 
+                   </div>
+                   <div>
+                       <h4>女士单鞋</h4>
+                        <div class="row">
+                            <div class="col-xs-4" v-for="ar in ars28">
+                                <a :href="ar.link">
+                                    <img :src="ar.img" alt="">
+                                    <p>{{ar.name}}</p>
+                                </a>
+                            </div>
+                        </div> 
+                   </div>
+                   <div>
+                       <h4>女士靴子</h4>
+                        <div class="row">
+                            <div class="col-xs-4" v-for="ar in ars29">
+                                <a :href="ar.link">
+                                    <img :src="ar.img" alt="">
+                                    <p>{{ar.name}}</p>
+                                </a>
+                            </div>
+                        </div> 
+                   </div>
+                   <div>
+                       <h4>男士凉鞋</h4>
+                        <div class="row">
+                            <div class="col-xs-4" v-for="ar in ars30">
+                                <a :href="ar.link">
+                                    <img :src="ar.img" alt="">
+                                    <p>{{ar.name}}</p>
+                                </a>
+                            </div>
+                        </div> 
+                   </div>
+                   
+               </div>
+   
+<!--   他她结束-->
+   
+<!--   天意美开始-->
+        <div>
+            <div>
+                <h4>女士凉鞋</h4>
+                    <div class="row">
+                        <div class="col-xs-4" v-for="ar in ars31">
+                            <a :href="ar.link">
+                                <img :src="ar.img" alt="">
+                                <p>{{ar.name}}</p>
+                            </a>
+                            </div>
+                    </div> 
+            </div>
+            <div>
+                <h4>女士单鞋</h4>
+                    <div class="row">
+                        <div class="col-xs-4" v-for="ar in ars32">
+                            <a :href="ar.link">
+                                <img :src="ar.img" alt="">
+                                <p>{{ar.name}}</p>
+                            </a>
+                            </div>
+                    </div> 
+            </div>
+            <div>
+                <h4>男士单鞋</h4>
+                    <div class="row">
+                        <div class="col-xs-4" v-for="ar in ars33">
+                            <a :href="ar.link">
+                                <img :src="ar.img" alt="">
+                                <p>{{ar.name}}</p>
+                            </a>
+                            </div>
+                    </div> 
+            </div>
+            <div>
+                <h4>男士凉鞋</h4>
+                    <div class="row">
+                        <div class="col-xs-4" v-for="ar in ars34">
+                            <a :href="ar.link">
+                                <img :src="ar.img" alt="">
+                                <p>{{ar.name}}</p>
+                            </a>
+                            </div>
+                    </div> 
+            </div>
+            <div>
+                <h4>男士靴子</h4>
+                    <div class="row">
+                        <div class="col-xs-4" v-for="ar in ars35">
+                            <a :href="ar.link">
+                                <img :src="ar.img" alt="">
+                                <p>{{ar.name}}</p>
+                            </a>
+                            </div>
+                    </div> 
+            </div>
+        </div>
+
+<!--   天意美结束-->
+      
+<!--      百丽开始-->
+        <div>
+            <div>
+                <h4>女式凉鞋</h4>
+                    <div class="row">
+                        <div class="col-xs-4" v-for="ar in ars36">
+                            <a :href="ar.link">
+                                <img :src="ar.img" alt="">
+                                <p>{{ar.name}}</p>
+                            </a>
+                            </div>
+                    </div> 
+            </div>
+            <div>
+                <h4>女式单鞋</h4>
+                    <div class="row">
+                        <div class="col-xs-4" v-for="ar in ars37">
+                            <a :href="ar.link">
+                                <img :src="ar.img" alt="">
+                                <p>{{ar.name}}</p>
+                            </a>
+                            </div>
+                    </div> 
+            </div>
+            <div>
+                <h4>男士单靴</h4>
+                    <div class="row">
+                        <div class="col-xs-4" v-for="ar in ars38">
+                            <a :href="ar.link">
+                                <img :src="ar.img" alt="">
+                                <p>{{ar.name}}</p>
+                            </a>
+                            </div>
+                    </div> 
+            </div>
+        </div>
+
+<!--      百丽开始-->
+<!--       思加图开始-->
+            <div>
+                <div>
+                    <h4>女士凉鞋</h4>
+                    <div class="row">
+                        <div class="col-xs-4" v-for="ar in ars39">
+                            <a :href="ar.link">
+                                <img :src="ar.img" alt="">
+                                <p>{{ar.name}}</p>
+                            </a>
+                            </div>
+                    </div> 
+                </div>
+                <div>
+                    <h4>女士单鞋</h4>
+                    <div class="row">
+                        <div class="col-xs-4" v-for="ar in ars40">
+                            <a :href="ar.link">
+                                <img :src="ar.img" alt="">
+                                <p>{{ar.name}}</p>
+                            </a>
+                            </div>
+                    </div> 
+                </div>
+                <div>
+                    <h4>女士靴子</h4>
+                    <div class="row">
+                        <div class="col-xs-4" v-for="ar in ars41">
+                            <a :href="ar.link">
+                                <img :src="ar.img" alt="">
+                                <p>{{ar.name}}</p>
+                            </a>
+                            </div>
+                    </div> 
+                </div>
+            </div>
+
+
+<!--       思加图结束-->
+<!--   森达开始-->
+
+        <div>
+            <div>
+                <h4>男士单鞋</h4>
+                    <div class="row">
+                        <div class="col-xs-4" v-for="ar in ars42">
+                            <a :href="ar.link">
+                                <img :src="ar.img" alt="">
+                                <p>{{ar.name}}</p>
+                            </a>
+                            </div>
+                    </div> 
+            </div>
+            <div>
+                <h4>男士凉鞋</h4>
+                    <div class="row">
+                        <div class="col-xs-4" v-for="ar in ars43">
+                            <a :href="ar.link">
+                                <img :src="ar.img" alt="">
+                                <p>{{ar.name}}</p>
+                            </a>
+                            </div>
+                    </div> 
+            </div>
+            <div>
+                <h4>男士靴子</h4>
+                    <div class="row">
+                        <div class="col-xs-4" v-for="ar in ars44">
+                            <a :href="ar.link">
+                                <img :src="ar.img" alt="">
+                                <p>{{ar.name}}</p>
+                            </a>
+                            </div>
+                    </div> 
+            </div>
+            <div>
+                <h4>女士凉鞋</h4>
+                    <div class="row">
+                        <div class="col-xs-4" v-for="ar in ars45">
+                            <a :href="ar.link">
+                                <img :src="ar.img" alt="">
+                                <p>{{ar.name}}</p>
+                            </a>
+                            </div>
+                    </div> 
+            </div>
+            <div>
+                <h4>女士靴子</h4>
+                    <div class="row">
+                        <div class="col-xs-4" v-for="ar in ars46">
+                            <a :href="ar.link">
+                                <img :src="ar.img" alt="">
+                                <p>{{ar.name}}</p>
+                            </a>
+                            </div>
+                    </div> 
+            </div>
+        </div>
+
+
+
+<!--   森达开始-->
+    </div>
+   </div>
+</div>
+</div>
+<!--    产品侧边栏的样式-->
+<!--   为您推荐样式-->
+    
+    <div class="goods">
+       <h4>新品推荐</h4>
+        <div class="row">
+            <div class="col-xs-6">
+                <a href=""><img src="images/goods1.jpg" alt=""></a>
+                <p>CAT/卡特秋季专柜同款酒红色牛皮女户外休闲女靴<span>￥1938</span></p>
+            </div>
+            <div class="col-xs-6">
+                <a href=""><img src="images/goods2.jpg" alt=""></a>
+                <p>STACCATO/思加图冬季专柜同款黑色牛皮女靴<span>￥1999</span></p>
+            </div>
+            <div class="col-xs-6">
+                <a href=""><img src="images/goods3.jpg" alt=""></a>
+                <p>Teenmix/天意美冬黑色牛皮简约OL优雅粗跟短靴<span>￥1598</span></p>
+            </div>
+            <div class="col-xs-6">
+                <a href=""><img src="images/goods4.jpg" alt=""></a>
+                <p>Joy& Peace/真诗美冬季专柜同款黑色羊皮女短靴<span>￥598</span></p>
+            </div>
+            <div class="col-xs-6">
+                <a href=""><img src="images/goods5.jpg" alt=""></a>
+                <p>Belle/百丽冬棕色简约时尚雪地靴牛皮女舒适女短靴<span>￥898</span></p>
+            </div>
+            <div class="col-xs-6">
+                <a href=""><img src="images/goods6.jpg" alt=""></a>
+                <p>Senda/森达冬季新款甜美绒面女长筒靴粗高跟过膝靴<span>￥668</span></p>
+            </div>
+            <div class="col-xs-6">
+                <a href=""><img src="images/goods7.jpg" alt=""></a>
+                <p>STACCATO/思加图冬季专柜同款黑色女靴时尚舒适<span>￥1799</span></p>
+            </div>
+            <div class="col-xs-6">
+                <a href=""><img src="images/goods8.jpg" alt=""></a>
+                <p>Teenmix天意美同款专柜同款黑色时尚牛皮铆钉短靴<span>￥1099</span></p>
+            </div>
+            <div class="col-xs-6">
+                <a href=""><img src="images/goods9.jpg" alt=""></a>
+                <p>Belle百丽黑色冬季专柜同款/英伦风牛皮/织物女时尚短靴<span>￥368</span></p>
+            </div>
+            <div class="col-xs-6">
+                <a href=""><img src="images/goods10.jpg" alt=""></a>
+                <p>Hush Puppies/暇步士冬季专柜同款黑色羊皮/兔皮时尚舒适<span>￥1598</span></p>
+            </div>
+            <div class="col-xs-6">
+                <a href=""><img src="images/goods11.jpg" alt=""></a>
+                <p>millies/妙丽冬季专柜同款牛羊绒拼接厚底<span>￥429</span></p>
+            </div>
+            <div class="col-xs-6">
+                <a href=""><img src="images/goods12.jpg" alt=""></a>
+                <p>CAT/卡特秋冬黑色牛皮/牛剖层革男户外休闲鞋<span>￥858</span></p>
+            </div>
+            <div class="col-xs-6">
+                <a href=""><img src="images/goods13.jpg" alt=""></a>
+                <p>millies妙丽秋季专柜同款马皮/牛皮厚底休闲舒适女短靴<span>￥499</span></p>
+            </div>
+            <div class="col-xs-6">
+                <a href=""><img src="images/goods14.jpg" alt=""></a>
+                <p>Senda/森达冬季专柜同款时尚舒适布洛克款式休闲女短靴<span>￥388</span></p>
+            </div>
+            <div class="col-xs-6">
+                <a href=""><img src="images/goods15.jpg" alt=""></a>
+                <p>Belle百丽东黑色时尚简约纺织品女舒适皮靴998008DC7<span>￥1098</span></p>
+            </div>
+            <div class="col-xs-6">
+                <a href=""><img src="images/goods16.jpg" alt=""></a>
+                <p>tata/他她秋黑色时尚袜子鞋套脚坡跟休闲鞋女短靴55011CD7<span>￥1169</span></p>
+            </div>
+            <div class="col-xs-6">
+                <a href=""><img src="images/goods17.jpg" alt=""></a>
+                <p>Teenmix/天意美牛剖层皮雪地靴女休闲靴舒适靴仿毛<span>￥798</span></p>
+            </div>
+            <div class="col-xs-6">
+                <a href=""><img src="images/goods18.jpg" alt=""></a>
+                <p>tata/他她秋黑色羊绒毛皮时尚套筒波浪边方跟女短靴<span>￥1169</span></p>
+            </div>
+            <div class="col-xs-6">
+                <a href=""><img src="images/goods19.jpg" alt=""></a>
+                <p>bata/拔佳东黑色圆头方根牛皮马丁靴女中靴684-9DZ7<span>￥528</span></p>
+            </div>
+            <div class="col-xs-6">
+                <a href=""><img src="images/goods4.jpg" alt=""></a>
+                <p>Senda/森达冬季新款甜美绒面女长筒靴粗高跟过膝靴<span>￥668</span></p>
+            </div>
+        </div>
+    </div>
+    
+  <!--   为您推荐样式-->  
+    
+     <div class="footer-top">
+           <img src="images/footer-top.png" alt="">
+     </div>
+   
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    <script src="js/jquery-1.11.1.min.js"></script>
+    <script src="js/swiper-4.2.6.min.js"></script>
+    <script src="js/vue.js"></script>
+    <script src="js/script.js"></script>
+</body>
+</html>

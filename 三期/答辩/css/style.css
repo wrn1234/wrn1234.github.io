@@ -1,0 +1,340 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    margin-bottom: 100px;
+    background: #eeeeee;
+}
+
+.ad::after{
+    content: "";
+    clear: both;
+    display: table;
+}
+.ad{
+    background: #000;
+    height: 53px;
+}
+.ad img{
+    width: 40px;
+}
+.ad a{
+    font-size: 25px;
+    color: #fff;
+    margin-right: 40px;
+    margin-left: 10px;
+}
+.ad div{
+    float: left;
+    color: aliceblue;
+    padding: 10px 0px;
+}
+.ad div:nth-of-type(1){
+    width: 40%;
+    padding-top: 7px;
+}
+.ad div:nth-of-type(2){
+    width: 30%;
+}
+.ad div:nth-of-type(3){
+    width: 30%;
+    background: #fff;
+    color: red;
+    text-align: center;
+    border-radius: 10px;
+    margin-top: 7px;
+    padding: 7px;
+}
+
+
+/*----搜索栏--*/
+.search{
+    background: -webkit-linear-gradient(rgba(0, 0, 0, 0.69), rgba(0, 0, 0, 0));
+    background: -o-linear-gradient(rgba(0, 0, 0, 0.69), rgba(0, 0, 0, 0));
+    background: linear-gradient(rgba(0, 0, 0, 0.69), rgba(0, 0, 0, 0));
+/*    background-color: #5e3442;*/
+/*    height: 100px;*/
+    position: fixed;
+    width: 100%;
+    padding-top: 12px;
+    padding-bottom: 12px;
+    z-index: 200;
+    transition:2s;
+}
+.search::after{
+    content: "";
+    display: table;
+    clear: both;
+}
+.search div{
+    float: left;
+    color: #fff;
+}
+.search .left,.search .right{
+    width: 20%;
+    text-align: center;
+}
+
+.search .left span,.search .right span{
+    display: block;
+    font-size: 12px;
+    
+}
+.search .left i,.search .right i{
+    font-size: 25px;
+    color: aliceblue;
+}
+.search .left p a{
+    color: aliceblue;
+    font-size: 20px;
+        
+}
+.search .center{
+    width: 60%;
+}
+
+.search .center input{
+    width: 100%;
+    height: 36px;
+    border-radius: 25px;
+/*    border: 0;*/
+    padding: 0px 32px;
+    outline: none;
+    color: black;
+}
+.search .center{
+    position: relative;
+}
+.search .center .fa-search{
+    color: #9b9b9b;
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    font-size: 18px;
+}
+.search .center .fa-microphone{
+    color: #9b9b9b;
+    position: absolute;
+    top: 10px;
+    right: 15px;
+    font-size: 18px;
+}
+
+
+
+
+
+.swiper-wrapper img{
+    width: 100%;
+}
+
+/*----搜索栏--*/
+
+
+/*导航样式*/
+nav ul::after{
+    content: "";
+    clear: both;
+    display: table;
+}
+nav li{
+    float: left;
+    list-style: none;
+    width: 20%;
+}
+nav .fa{
+    font-size: 25px;
+}
+nav span{
+    font-size: 14px;
+    display: block;
+}
+nav a{
+    text-decoration: none;
+    color: #5d5f6a;
+}
+nav a:hover,
+nav .active a{
+    color: #ff0000;
+}
+nav{
+    text-align: center;
+}
+nav ul{
+    position: fixed;
+/*    right: 0;*/
+    bottom: 0px;
+    left:0;
+    width: 100%;
+/*    height: 55px;*/
+    z-index: 100;
+    background-color: #fff;
+    margin-bottom: 0px;
+}
+
+.container {
+     padding-right: 0px; 
+     padding-left: 0px; 
+    margin-right: auto;
+    margin-left: auto;
+}
+/*导航样式*/
+
+
+/*产品图片样式*/
+.plus img,
+.qiang img,
+.top img,
+.linkre img,
+.nike img,
+.newsflash img,
+.consult img,
+.oneday img,
+.landing img,
+.game img,
+.savemoney img,
+.time img,
+.necessary img,
+.shoes img,
+.ride img,
+.sandals img,
+nav ul li img{
+    width: 100%;
+}
+.shoes{
+    text-align: center;
+}
+.shoes img{
+    padding-left: 3px;
+}
+.shoes p a{
+    color: red;
+}
+.col-xs-3,.col-xs-6,.col-xs-12,.col-xs-4{
+    padding: 0;
+}
+.row{
+    margin: 0;
+}
+
+
+
+
+
+
+
+.news{
+    margin-top: 5px;
+    background-color:#ffffff;
+    border-radius: 25px;
+    font-size: 12px;
+    padding: 10px;
+}
+.news::after{
+    content: "";
+    display: table;
+    clear: both;
+}
+.news .left{
+    float: left;
+    width: 16%;
+}
+.news .left img{
+    width: 50px;
+}
+.news .center{
+    float: left;
+    width: 60%;
+    height: 16px;
+    overflow: hidden;
+}
+
+.news .center a{
+    display: block;
+    height: 16px;
+    overflow: hidden;
+    text-overflow: ellipsis;/*--规定当文本溢出包含元素时发生的事情。*/
+    white-space: nowrap;                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                     
+
+}
+.news a{
+    text-decoration: none;
+    color: #1a1a1a;
+}
+.register::after,.client::after{
+    clear: both;
+    content: "";
+    display: table;
+}
+.register a,.client a,.register,.client{
+    float: left;
+    font-size: 15px;
+    color: black;
+    padding-top: 20px;
+}
+.register a,.client a{
+    padding-left: 15px;
+}
+.client{
+    margin-bottom: 40px;
+}
+.register{
+    width: 40%;
+}
+.client{
+    width: 60%;
+}
+.website {
+    text-align: center;
+    color: gray;
+}
+
+
+
+/*产品图片样式*/
+
+
+.footer-top{
+    background: url(../images/footer-top.png);
+    width: 50px;
+    height: 55px;
+    background-size: cover;
+    display: inline-block;
+    position: fixed;
+    bottom: 75px;
+    right: -10px;
+/*    z-index: 50;*/
+    display: none;
+    display: inline-block;
+    left: 350px;
+}
+
+/*弹出广告部分样式*/
+.get-out{
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.31);
+    z-index: 100;
+}
+.get-out img{
+    width: 100%;
+}
+.get-out .img{
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+.get-out p{
+    padding: 5px;
+    margin: 5px;
+    float: left;
+    font-size: 18px;
+    background: #fff;
+}
+/*弹出广告部分样式*/
+
+
+
