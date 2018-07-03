@@ -515,6 +515,7 @@ for(var i=0;i<sortNav.length;i++){
     console.log(this.index);
     for(var j=0;j<sortList.length;j++){
         sortNav[j].classList.remove("color");
+//            给div加class名
         sortList[j].classList.remove("act");
     }
     sortNav[this.index].classList.add("color");
@@ -573,6 +574,7 @@ function smoothscroll(){
 
 gotop.onclick = function(){
     smoothscroll();
+//    平滑滚动
 }
 window.onscroll=function(){
     //search部分滚动变色
